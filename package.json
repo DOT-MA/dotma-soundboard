@@ -1,0 +1,23 @@
+{
+  "name": "dotmasoundboard",
+  "version": "1.0.0",
+  "description": "Sounds of Dotma",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "reset-css": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aXises/DotmaSoundboard.git"
+  },
+  "author": "aXises",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/aXises/DotmaSoundboard/issues"
+  },
+  "homepage": "https://github.com/aXises/DotmaSoundboard#readme"
+}
