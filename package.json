@@ -2,9 +2,12 @@
   "name": "dotmasoundboard",
   "version": "1.0.0",
   "description": "Sounds of Dotma",
-  "homepage": "https://github.com/aXises/dotma_soundboard",
+  "homepage": "https://github.com/aXises/DotmaSoundboard#readme",
   "dependencies": {
     "bootstrap": "^4.2.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-scrollchor": "^6.0.0",
@@ -13,15 +16,17 @@
     "webpack-cli": "^3.2.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
-    "gh-pages": "^2.0.1"
+    "babel-loader": "^8.0.5"
   },
   "scripts": {
     "bundle": "./node_modules/.bin/webpack",
-    "predeploy": "npm run bundle",
-    "deploy": "gh-pages -d ./"
+    "postinstall": "npm run bundle",
+    "start": "babel-node bin/www"
   },
   "repository": {
     "type": "git",
@@ -31,6 +36,5 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/aXises/DotmaSoundboard/issues"
-  },
-  "homepage": "https://github.com/aXises/DotmaSoundboard#readme"
+  }
 }
