@@ -7,9 +7,14 @@ import config from "config";
 class App extends React.Component {
     constructor(props) {
         super(props);
+        let totalSounds = 0;
+        for (const group of config.data) {
+            totalSounds += group.sounds.length;
+        }
         this.state = {
             title: "DOTMA SOUNDBOARD",
             soundGroups: config.data,
+            totalSounds,
         }
     }
     render() {
@@ -22,6 +27,9 @@ class App extends React.Component {
                     </div>
                     <div className="align-horizontal">
                         <p>SOUNDS OF DOTMA</p>
+                    </div>
+                    <div className="stats align-horizontal">
+                        <p><span>{this.state.totalSounds}</span> High Quality Sounds Available.</p>
                     </div>
                 </header>
                 <hr />

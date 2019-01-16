@@ -74,6 +74,17 @@ nav ul li p {
     margin: 0;
 }
 
+#app .stats p {
+    letter-spacing: 0;
+    font-weight: 300;
+}
+
+#app .stats p > span {
+    color: var(--main-color-b);
+    font-weight: bold;
+    -webkit-text-stroke: transparent;
+}
+
 #app > div > header {
     padding-top: 150px;
 }
@@ -133,6 +144,8 @@ nav ul li p {
 
 #app main section .item header h1 {
     font-size: 1.1em;
+    margin: 0;
+    text-align: center;
 }
 
 #app main section .item .play {
