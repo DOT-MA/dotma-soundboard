@@ -2,7 +2,7 @@
   "name": "dotmasoundboard",
   "version": "1.0.0",
   "description": "Sounds of Dotma",
-  "homepage": "https://github.com/aXises/DotmaSoundboard#readme",
+  "homepage": "hhttps://github.com/DOT-MA/dotma_soundboard#readme",
   "dependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
@@ -27,11 +27,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aXises/DotmaSoundboard.git"
+    "url": "git+https://github.com/DOT-MA/dotma_soundboard.git"
   },
   "author": "aXises",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/aXises/DotmaSoundboard/issues"
+    "url": "https://github.com/DOT-MA/dotma_soundboard/issues"
   }
 }

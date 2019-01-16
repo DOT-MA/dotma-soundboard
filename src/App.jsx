@@ -28,6 +28,7 @@ class App extends React.Component {
                     <div className="align-horizontal">
                         <p>SOUNDS OF DOTMA</p>
                     </div>
+                    <a className="align-horizontal align-vertical" href="https://github.com/DOT-MA/dotma_soundboard" target="_blank"><ion-icon name="logo-github"></ion-icon>GitHub</a>
                     <div className="stats align-horizontal">
                         <p><span>{this.state.totalSounds}</span> High Quality Sounds Available.</p>
                     </div>
