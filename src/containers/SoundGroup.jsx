@@ -16,7 +16,7 @@ export default class SoundGroup extends React.Component {
 
     render() {
         return (
-            <main>
+            <main id={this.props.groupData.name}>
                 <section>
                     <header className="align-horizontal">
                         <h1>{this.props.groupData.name}</h1>

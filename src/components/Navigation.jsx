@@ -1,4 +1,5 @@
 import * as React from "react";
+import Scrollchor from "react-scrollchor";
 
 export default class Navigation extends React.Component {
     constructor(props) {
@@ -14,9 +15,11 @@ export default class Navigation extends React.Component {
                     {
                         this.props.headers.map(element => {
                             return (
-                                <li className="align-vertical align-horizontal animation-prop" key={element.name}>
-                                    <p>{element.name}</p>
-                                </li>
+                                <Scrollchor key={element.name} to={"#" + element.name}>
+                                    <li className="align-vertical align-horizontal animation-prop">
+                                        <p>{element.name}</p>
+                                    </li>
+                                </Scrollchor>
                             )
                         })
                     }
