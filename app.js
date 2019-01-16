@@ -10,6 +10,7 @@ const app = express();
 
 // middleware setup
 app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/dotma-resources"));
 app.use("/node_modules", express.static(__dirname + "/node_modules"));
 
 // view engine setup
