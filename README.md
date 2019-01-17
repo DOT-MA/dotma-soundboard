@@ -1,4 +1,12 @@
 # Dotma Soundboard
 Soundboard for Dotma members
 
-Currently has 81 high quality sounds.
+## Sound Count
+| Member | Sound Count |
+| ------ | ----------- |
+| Alex | 115 |
+| Brad | 12 |
+| Patty | 9 |
+| Tony | 4 | 
+| Group | 3 |
+| Total | 143
