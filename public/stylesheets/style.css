@@ -140,20 +140,16 @@ nav ul li p {
     padding: 20px;
     margin-top: 20px;
     float: left;
-    cursor: pointer;
-}
-
-#app main section .item:hover {
-    background-color: #171321;
 }
 
 #app main section .item:focus {
     background-color: var(--contrast-color);
 }
 
-#app main section .item:hover > div .play {
+#app main section .item > div .play:hover {
     background-color: var(--contrast-color);
     opacity: 0.9;
+    cursor: pointer;
 }
 
 #app main section .item header h1 {
@@ -166,6 +162,10 @@ nav ul li p {
     font-size: 1em;
     margin: 0;
     text-align: center;
+}
+
+#app main section .item header.title {
+    height: 50px;
 }
 
 #app main section .item .play {

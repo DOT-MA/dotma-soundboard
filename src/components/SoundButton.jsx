@@ -12,15 +12,15 @@ export default class SoundButton extends React.Component {
     render() {
         const classes = "item col col-xl-3 col-md-12 col-sm-12 col-12 animation-prop";
         return (
-            <div className={classes + (this.state.isPlaying ? " is-playing" : "")} onClick={() => {this.playSound(this.props.audioPath)}}>
+            <div className={classes + (this.state.isPlaying ? " is-playing" : "")}>
                 <header className="align-horizontal">
                     <h1>{this.props.index}</h1>
                 </header>
-                <header className="align-horizontal">
+                <header className="align-horizontal title">
                     <p>{this.props.audioName}</p>
                 </header>
                 <div className="align-horizontal">
-                    <div className="play align-horizontal align-vertical animation-prop">
+                    <div className="play align-horizontal align-vertical animation-prop" onClick={() => {this.playSound(this.props.audioPath)}}>
                         <ion-icon name="volume-high"></ion-icon>
                     </div>
                 </div>
