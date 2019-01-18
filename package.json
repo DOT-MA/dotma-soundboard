@@ -23,7 +23,8 @@
   },
   "scripts": {
     "bundle": "./node_modules/.bin/webpack",
-    "start": "npm run bundle && babel-node bin/www"
+    "start": "npm run bundle && babel-node bin/www",
+    "update": "git submodule update --recursive --remote"
   },
   "repository": {
     "type": "git",
