@@ -5,7 +5,7 @@ module.exports = {
         form: path.resolve(__dirname, "./") + "/src/App.jsx",
     },
     output: {
-        filename: "../public/javascript/webpack.bundle.js"
+        filename: "../dist/javascript/webpack.bundle.js"
     },
     module: {
         rules: [

@@ -12,6 +12,7 @@ const app = express();
 app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/dotma-resources"));
 app.use("/node_modules", express.static(__dirname + "/node_modules"));
+app.use("/dist", express.static(__dirname + "/dist"));
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
