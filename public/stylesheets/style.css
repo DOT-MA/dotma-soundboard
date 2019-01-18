@@ -59,7 +59,7 @@ nav ul {
 }
 
 nav ul li {
-    width: 100px;
+    width: 150px;
     height: 100%;
     float: left;
     border-bottom: 1px solid transparent;
@@ -157,7 +157,13 @@ nav ul li p {
 }
 
 #app main section .item header h1 {
-    font-size: 1.1em;
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+}
+
+#app main section .item header p {
+    font-size: 1em;
     margin: 0;
     text-align: center;
 }

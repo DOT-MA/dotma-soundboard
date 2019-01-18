@@ -4,13 +4,14 @@ import SoundButton from "components/SoundButton";
 export default class SoundGroup extends React.Component {
     constructor(props) {
         super(props)
-        const ROW_LENGTH = 3;
+        const ROW_LENGTH = 4;
         const arr = [];
         for (let i = 0; i < this.props.groupData.sounds.length; i += ROW_LENGTH) {
             arr.push(this.props.groupData.sounds.slice(i, i + ROW_LENGTH))
         }
         this.state = {
             soundData: arr,
+            counter: 0,
         }
     }
 
@@ -31,8 +32,9 @@ export default class SoundGroup extends React.Component {
                                 <div className="row" key={sounds.toString()}>
                                 {
                                     sounds.map(sound => {
+                                        this.state.counter++;
                                         return (
-                                            <SoundButton audioName={sound[0]} audioPath={sound[1]} groupName={this.props.groupData.folderName} key={sound.toString()}/>
+                                            <SoundButton audioName={sound[0]} audioPath={sound[1]} groupName={this.props.groupData.folderName} index={this.state.counter} key={sound.toString()}/>
                                         )
                                     })
                                 }
