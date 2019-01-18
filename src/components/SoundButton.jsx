@@ -20,8 +20,13 @@ export default class SoundButton extends React.Component {
                     <p>{this.props.audioName}</p>
                 </header>
                 <div className="align-horizontal">
-                    <div className="play align-horizontal align-vertical animation-prop" onClick={() => {this.playSound(this.props.audioPath)}}>
-                        <ion-icon name="volume-high"></ion-icon>
+                    <div>
+                        <div className="download align-horizontal align-vertical animation-prop" onClick={() => {this.downloadSound(this.props.audioPath)}}>
+                            <ion-icon name="download"></ion-icon>
+                        </div>
+                        <div className="play align-horizontal align-vertical animation-prop" onClick={() => {this.playSound(this.props.audioPath)}}>
+                            <ion-icon name="volume-high"></ion-icon>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -35,5 +40,9 @@ export default class SoundButton extends React.Component {
         audio.onended = () => {
             this.setState({isPlaying: false});
         };
+    }
+
+    downloadSound(path) {
+        window.location.href = `/download/${this.props.groupName}${path}`;
     }
 }
